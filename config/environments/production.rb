@@ -81,4 +81,8 @@ Rails.application.configure do
 #note to set this to your actual host
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
+# Paperclip config:
+Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
+Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
+
 end
