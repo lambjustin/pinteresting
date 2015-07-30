@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: 947fbf6e7998154235f81754a44b6b187368a657
+  revision: c819d5da481edc687234bb7191345bb278e7c96a
   specs:
     paperclip (4.3.0)
       activemodel (>= 3.2.0)
@@ -51,6 +51,11 @@ GEM
     autoprefixer-rails (5.2.1.1)
       execjs
       json
+    aws-sdk (1.64.0)
+      aws-sdk-v1 (= 1.64.0)
+    aws-sdk-v1 (1.64.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -182,6 +187,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk (< 2.0)
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
